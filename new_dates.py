@@ -7,7 +7,7 @@ import schedule
 
 
 def send_email(date):
-    requests.post('https://hooks.slack.com/services/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', data='{"text":"New date available: %s"}' % date, headers={"Content-type": "application/json"})
+    requests.post('webhook_link', data='{"text":"New date available: %s"}' % date, headers={"Content-type": "application/json"})
 def check_date():
     headers = {
         "Accept": "application/json, text/javascript, */*; q=0.01",
