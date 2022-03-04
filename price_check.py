@@ -1,7 +1,5 @@
 import requests
 
-webhook_link = "https://hooks.slack.com/services/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"
-
 prices = []
 
 def check_price():
